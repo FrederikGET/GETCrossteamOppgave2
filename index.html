@@ -9,6 +9,8 @@
         body{
             background-color: #333333;
             color: aliceblue;
+            display: flex;
+            gap: 50px;
         }
         #container1{
             display: grid;
@@ -18,6 +20,7 @@
         #container2{
             display: grid;
             grid-template-columns: repeat(2, 200px);
+
             grid-template-rows: repeat(5, 200px);
             float: right;
         }
@@ -36,37 +39,59 @@
 </head>
 <body>
     <div id="container1">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box1"></div>
-        
+        <div id="a1" onclick="legtil(this)" class="box1"></div>
+        <div id="a2" onclick="legtil(this)" class="box2"></div>
+        <div id="a3" onclick="legtil(this)" class="box1"></div>
+        <div id="a4" onclick="legtil(this)" class="box2"></div>
+        <div id="a5" onclick="legtil(this)" class="box1"></div>
+        <div id="a6" onclick="legtil(this)" class="box2"></div>
+        <div id="a7" onclick="legtil(this)" class="box1"></div>
+        <div id="a8" onclick="legtil(this)" class="box2"></div>
+        <div id="a9" onclick="legtil(this)" class="box1"></div>
     </div>
     <div id="container2">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box2"></div>
-        <div class="box1"></div>
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box2"></div>
-        <div class="box1"></div>
-        <div class="box1"></div>
-        <div class="box2"></div>
+        <div id="b1" onclick="velgbilde(this)" class="box1">
+            <img src="img/Lrere_Grid_1.png" width="200" height="200">
+        </div>
+        <div id="b2" onclick="velgbilde(this)" class="box2">
+            <img src="img/Lrere_Grid_2.png" width="200" height="200">
+        </div>
+        <div id="b3" onclick="velgbilde(this)" class="box2">
+            <img src="img/Lrere_Grid_3.png" width="200" height="200">
+        </div>
+        <div id="b4" onclick="velgbilde(this)" class="box1">
+            <img src="img/Lrere_Grid_4.png" width="200" height="200">
+        </div>
+        <div id="b5" onclick="velgbilde(this)" class="box1">
+            <img src="img/Lrere_Grid_5.png" width="200" height="200">
+        </div>
+        <div id="b6" onclick="velgbilde(this)" class="box2">
+            <img src="img/Lrere_Grid_6.png" width="200" height="200">
+        </div>
+        <div id="b7" onclick="velgbilde(this)" class="box2">
+            <img src="img/Lrere_Grid_7.png" width="200" height="200">
+        </div>
+        <div id="b8" onclick="velgbilde(this)" class="box1">
+            <img src="img/Lrere_Grid_8.png" width="200" height="200">
+        </div>
+        <div id="b9" onclick="velgbilde(this)" class="box1">
+            <img src="img/Lrere_Grid_9.png" width="200" height="200">
+        </div>
+        <div id="b10" onclick="velgbilde(this)" class="box2">
 
-        <img src="img/Lrere_Grid_1.png" width="200" height="200">
-        <img src="img/Lrere_Grid_2.png" width="200" height="200">
-        <img src="img/Lrere_Grid_3.png" width="200" height="200">
-        <img src="img/Lrere_Grid_4.png" width="200" height="200">
-        <img src="img/Lrere_Grid_5.png" width="200" height="200">
-        <img src="img/Lrere_Grid_6.png" width="200" height="200">
-        <img src="img/Lrere_Grid_7.png" width="200" height="200">
-        <img src="img/Lrere_Grid_8.png" width="200" height="200">
-        <img src="img/Lrere_Grid_9.png" width="200" height="200">
+        </div>
+
+        <script>
+            let valgt = null;
+            function velgbilde(x){
+                valgt = x.id;
+                console.log(valgt);
+                console.log(x.innerHTML);
+            }
+            function legtil(_){
+                
+            }
+            
+        </script>
 </body>
 </html>
